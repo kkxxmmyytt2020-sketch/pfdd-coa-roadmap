@@ -1,0 +1,34 @@
+{
+  "project": {"title": "Itch in moderate-to-severe atopic dermatitis (worked example)", "indication": "Atopic dermatitis, moderate-to-severe",
+    "population": "Adults and children ≥2 years", "product": "Hypothetical oral anti-inflammatory", "phase": "Planning phase 2b/3", "created": "2026-09-22"},
+  "stages": {
+    "g1": {"status": "approved", "gate": {"decided_by": "user", "date": "2026-09-22", "note": "Approved"},
+      "decisions": [{"id": "g1-reporter", "question": "Who reports for each age band?", "answer": "Self-report ≥12 y; caregiver-observed behaviours 2–11 y",
+        "decided_by": "user", "sources": ["G1 §II.C", "G2 §VI"], "evidence_type": "literature", "date": "2026-09-22"}],
+      "outputs": {"research_questions": ["Which AD symptoms are most bothersome to patients and caregivers?", "How does itch affect sleep and daily function across ages?"],
+        "reporter_plan": [{"subgroup": "≥12 years", "reporter": "Patient", "rationale": "Can reliably self-report itch intensity"},
+                          {"subgroup": "2–11 years", "reporter": "Caregiver (observed behaviours)", "rationale": "Self-report of itch intensity unreliable; scratching is observable"}],
+        "evidence_inventory": [{"source": "Externally-led PFDD meeting report (AD)", "type": "Facilitated patient meeting", "population_covered": "Adults, caregivers",
+          "reporter": "Patients, caregivers", "representativeness_gaps": "Convenience sample; few adolescents; US only"}],
+        "sampling_plan": {"method": "Purposive, quota by age band × severity", "target_n": "~30 interviews, saturation rule G2 App. 4", "subgroups": "12–17, adults; caregivers of 2–5, 6–11"}},
+      "open_questions": []},
+    "g2": {"status": "approved", "decisions": [], "outputs": {"mah_hierarchy": [
+        {"mah": "Itch", "level": "lower", "concepts": ["itch intensity", "urge to scratch"], "patient_evidence": "Most bothersome in 27/30", "evidence_type": "real_patient_data"},
+        {"mah": "Sleep disturbance", "level": "lower", "concepts": ["waking from itch"], "patient_evidence": "22/30", "evidence_type": "real_patient_data"},
+        {"mah": "Skin pain", "level": "lower", "concepts": ["burning", "soreness"], "patient_evidence": "15/30", "evidence_type": "real_patient_data"}],
+      "coder_agreement": {"kappa": 0.78, "n_segments": 120, "disagreements": "itch vs skin pain (burning)"}}},
+    "g3": {"status": "awaiting_gate", "decisions": [{"id": "g3-branch", "question": "Use / modify / develop for worst itch (≥12 y)?", "answer": "a · use existing worst-itch NRS",
+        "decided_by": "proposed", "sources": ["G3 §III.C.2.a"], "evidence_type": "regulatory_precedent", "date": "2026-09-22"}],
+      "outputs": {"table1": [
+        {"mah": "Itch", "coi": "Worst itch intensity, past 24 h", "direct": true, "coa_type": "PRO", "coa_name": "Worst-itch NRS (0–10) daily diary", "score": "Weekly mean of daily worst itch", "endpoint": "Tentative: change at week 16"},
+        {"mah": "Itch (2–11 y)", "coi": "Observed scratching behaviour", "direct": false, "coa_type": "ObsRO", "coa_name": "To be selected / developed", "score": "—", "endpoint": "Tentative"}],
+        "rationale": [
+          {"component": "A", "claim": "Worst itch should be assessed by PRO because itch is known only to the patient", "support": "G3 App. A", "status": "supported"},
+          {"component": "D", "claim": "Adolescents understand the item and recall period", "support": "Adult cognitive interviews only", "status": "partial", "evidence_needed": "Cognitive interviews, 12–17 y"},
+          {"component": "H", "claim": "ObsRO scratching corresponds to itch", "support": "", "status": "gap", "evidence_needed": "Convergent evidence vs self-report in 8–11 y who can self-report"}]},
+      "open_questions": ["Which ObsRO, if any, has evidence in 2–5 y?"]},
+    "g4": {"status": "not_started", "decisions": [], "outputs": {}}
+  },
+  "loopbacks": [],
+  "synthetic_artifacts": [{"id": "syn-1", "stage": "g2", "what": "20 synthetic quotes used to stress-test code definitions before fieldwork", "file": "synthetic/g2-quotes.csv"}]
+}

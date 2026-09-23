@@ -1,0 +1,14 @@
+{
+  "name": "pfdd-local",
+  "description": "Local marketplace for the PFDD COA Roadmap plugin (FDA PFDD Guidances 1-4).",
+  "owner": {
+    "name": "Yunting Liu"
+  },
+  "plugins": [
+    {
+      "name": "pfdd-coa-roadmap",
+      "source": "./pfdd-coa-roadmap",
+      "description": "Walks FDA PFDD Guidances 1-4 to decide the meaningful aspect of health (MAH), concept of interest (COI), fit-for-purpose COA, and COA-based endpoint."
+    }
+  ]
+}

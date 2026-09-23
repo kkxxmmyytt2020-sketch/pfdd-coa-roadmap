@@ -1,6 +1,6 @@
 {
   "name": "pfdd-coa-roadmap",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "AI-assisted, human-gated workflow through FDA PFDD Guidances 1-4: patient input (G1) -> what matters (G2) -> MAH, COI and fit-for-purpose COA (G3) -> COA-based endpoint (G4). Every step cites its guidance section; every stage ends at a user gate.",
   "author": { "name": "Yunting Liu" },
   "keywords": ["PFDD", "COA", "PRO", "clinical outcome assessment", "FDA", "psychometrics"]

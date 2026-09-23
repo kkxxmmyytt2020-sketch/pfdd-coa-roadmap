@@ -40,7 +40,7 @@ synthetic and never counts as patient evidence.
 
 ## Layout
 ```
-pfdd-coa-roadmap/
+pfdd-coa-roadmap/                 (full reference: pfdd-coa-roadmap/README.md)
   skills/roadmap            orchestrator: gates, state, routing   (+ references: state schema, sources, example)
   skills/g1-patient-input   G1                                    (+ references)
   skills/g2-what-matters    G2                                    (+ references)
